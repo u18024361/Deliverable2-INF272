@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\FreelancerController.cs" />
     <Compile Include="Controllers\UserRegistrationController.cs" />
     <Compile Include="Global.asax.cs">
@@ -174,6 +175,7 @@
     <Content Include="Views\UserRegistration\UserRegistration.cshtml" />
     <Content Include="Views\UserRegistration\FreelancerRegistration.cshtml" />
     <Content Include="Views\UserRegistration\EmployerRegistration.cshtml" />
+    <Content Include="Views\Admin\AdminHome.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
