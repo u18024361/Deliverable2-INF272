@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\FreelancerController.cs" />
+    <Compile Include="Controllers\UserRegistrationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -170,6 +171,9 @@
     <Content Include="Views\Freelancer\Report.cshtml" />
     <Content Include="Views\Freelancer\Edit.cshtml" />
     <Content Include="Views\Freelancer\User_Profile.cshtml" />
+    <Content Include="Views\UserRegistration\UserRegistration.cshtml" />
+    <Content Include="Views\UserRegistration\FreelancerRegistration.cshtml" />
+    <Content Include="Views\UserRegistration\EmployerRegistration.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
