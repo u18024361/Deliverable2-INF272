@@ -121,7 +121,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\EmployerController.cs" />
     <Compile Include="Controllers\FreelancerController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\UserRegistrationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -133,10 +136,14 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Project.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Pictures\Employer\1.jpeg" />
+    <Content Include="Pictures\Employer\2.jpg" />
+    <Content Include="Pictures\Employer\3.jpg" />
     <Content Include="Pictures\Logo.jpeg" />
     <Content Include="Pictures\plumber1.jpg" />
     <Content Include="Pictures\plumber2.jpg" />
@@ -176,6 +183,12 @@
     <Content Include="Views\UserRegistration\FreelancerRegistration.cshtml" />
     <Content Include="Views\UserRegistration\EmployerRegistration.cshtml" />
     <Content Include="Views\Admin\AdminHome.cshtml" />
+    <Content Include="Views\Password\Index.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Employer\Index.cshtml" />
+    <Content Include="Views\Employer\PotentialFreelancer.cshtml" />
+    <Content Include="Views\Employer\Profiles.cshtml" />
+    <Content Include="Views\Employer\PastBookings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
