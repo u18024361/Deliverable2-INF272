@@ -1,0 +1,121 @@
+﻿
+@{
+    ViewBag.Title = "PastBookings";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <fieldset>
+        <div class="info" style="width:100%">
+            <i class="fa fa-user" style="font-size:168px; color: #666666; left:20px"></i>
+            <div>
+                <h1 style="display:inline">Vrajesh Patel <!--Model.Name--></h1><br />
+                <h4 style="display:inline">Laudium, Gauteng <!--Model.Venue--></h4>
+            </div>
+        </div>
+
+        <div class="c">
+            <img style="width:auto" height="250" src="~/Pictures/Logo.jpeg" alt="Logo" />
+        </div>
+
+
+
+        <div class="center" id="book" style="width:70%">
+            <h2 style="text-shadow:1px 1px 1px #b300b3">Past Bookings</h2>
+            <!--foreach (var Freelancer in Model.Users) -->
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Occupation</th>
+                    <th>Date</th>
+                    <th>Rate</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Thandiwe Modipa <!--Model.FullName--></td>
+                    <td>Graphic Designer<!--Model.Job--></td>
+                    <td>6 May 2020 <!--Model.Date--></td>
+                    <td>
+                        <span>
+                            <select id="rating" name="rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </span>
+                    </td>
+                    <td><a class="btn btn-primary" id="btnViewProfile" <!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->Re-book</a></td>
+                </tr>
+
+                <tr>
+                    <td>Bill Evans  <!--Model.FullName--></td>
+                    <td>Plumber<!--Model.Job--></td>
+                    <td> 13 October 2018 <!--Model.Date--></td>
+                    <td>
+                        <span>
+                            <select id="rating" name="rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </span>
+                    </td>
+                    <td><a class="btn btn-primary" id="btnViewProfile" <!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->Re-book</a></td>
+                </tr>
+
+                <tr>
+                    <td>Vrajesh Patel<!--Model.FullName--></td>
+                    <td>Photographer<!--Model.Job--></td>
+                    <td>9 September <!--Model.Date--></td>
+                    <td>
+                        <span>
+                            <select id="rating" name="rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </span>
+                    </td>
+                    <td><a class="btn btn-primary" id="btnViewProfile" <!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->Re-book</a></td>
+                </tr>
+
+                <tr>
+                    <td>Sara Kim <!--Model.FullName--></td>
+                    <td>Electrician<!--Model.Job--></td>
+                    <td> 4 August 2009 <!--Model.Date--></td>
+                    <td>
+                        <span>
+                            <select id="rating" name="rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </span>
+                    </td>
+                    <td><a class="btn btn-primary" id="btnViewProfile" <!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->Re-book</a></td>
+                </tr>
+            </table>
+            <br />
+            <br />
+
+            <div id="left" style="width:35%">
+                <a class="btn btn-primary" id="o">Print a report</a>
+                <a class="btn btn-primary" id="o" href="@Url.Action("Index", "Employer")">Go Back</a>
+            </div>
+
+        </div>
+    </fieldset>
+
+</body>
+
+
+

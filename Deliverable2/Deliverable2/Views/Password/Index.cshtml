@@ -1,0 +1,93 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        .Reset {
+            padding-left: 420px;
+            color: purple;
+        }
+
+        .div {
+            padding-left: 140px;
+            padding-bottom: 50px;
+        }
+
+        .Confirm {
+            color: purple;
+        }
+
+        .div2 {
+            padding-left: 500px;
+        }
+
+        button {
+            background-color: lightgrey;
+            color: purple;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 20%;
+            border-radius: 10px;
+            margin-top: 5%;
+        }
+
+        .Textbox {
+            height: 20px;
+            position: relative;
+            border: 2px solid #cdcdcd;
+            border-color: rgba(0, 0, 0, .14);
+            background-color: AliceBlue;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    @{
+        ViewBag.Title = "Index";
+    }
+    
+        <img src="~/Pictures/Logo.jpeg" alt="LOGO" width="300" height="250">
+        <h3 class="Reset"> Reset password</h3>
+        <div class="div">
+            <h4 class="Confirm"> Let's confirm a new password</h4>
+            <form name="myForm" action="/action_page.php">
+                <label for="Question">Your Question:</label><br>
+                <input type="text" class="TextBox" name="Question"><br><br>
+                <label for="Username">Username:</label><br>
+                <input type="text" class="TextBox" name="Username"><br><br>
+                <label for="Password">New Password:</label><br>
+                <input type="text" class="TextBox" name="Password"><br><br>
+                <label for="Confirm">Confirm Password:</label><br>
+                <input type="text" class="TextBox" name="Confirm"><br><br>
+            </form>
+            <div class="div2">
+                <a type="button" href="~/Login/Index" style="background-color: lightgrey;color: purple;padding: 14px 20px;margin:8px 0;border:none;cursor:pointer;width:25%;border-radius:10px;margin-top:5%;"> Return</a>
+                <button type="button" value="submit" onclick="return validateForm()">Sign In</button>
+            </div>
+        </div>
+
+        <script>
+          Validation
+          function validateForm() {
+  var x = document.forms["myForm"]["Question"].value;
+  var x = document.forms["myForm"]["Username"].value;
+  var x = document.forms["myForm"]["Password"].value;
+  var x = document.forms["myForm"]["Confirm"].value;
+  if (x == "") {
+    alert("All fields must be filled in");
+    return false;
+  }
+}
+        </script>
+    </body>
+</html>
