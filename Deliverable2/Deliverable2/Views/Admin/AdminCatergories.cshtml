@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="col-md-5">
-            <h4 style="color:purple;"> Current Accounts </h4>
+            <h4 style="color:purple;"> Current Business Catergories </h4>
         </div>
         <div class="input-group col-md-5" style="float:right">
             <input type="text" class="form-control" placeholder="Search for an account">
@@ -38,50 +38,48 @@
         <table id="table" class="table  table-hover table-responsive"
                style="margin-left: auto;">
             <tr>
-                <th>Name</th>
-                <th>Status</th>
-                <th>Catergories</th>
-                <th>Date Created</th>
-                <th>Rating</th>
+                <th>Catergory</th>
                 <th></th>
                 <th></th>
             </tr>
 
 
             <tr>
-                <td>Mike</td>
-                <td>Active</td>
                 <td>Plumbing</td>
-                <td>01/02/2020 </td>
-                <td>4</td>
-                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Disable</button></td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Edit</button></td>
                 <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#delete">Delete</button></td>
             </tr>
             <tr>
-                <td>Rob</td>
-                <td>Active</td>
                 <td>Photography</td>
-                <td>05/04/2020 </td>
-                <td>5</td>
-                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Disable</button></td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Edit</button></td>
                 <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#delete">Delete</button></td>
             </tr>
             <tr>
-                <td>Dhiren</td>
-                <td>Active</td>
-                <td>Plumbing</td>
-                <td>09/08/2020 </td>
-                <td>4</td>
-                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Disable</button></td>
+                <td>Painter</td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Edit</button></td>
                 <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#delete">Delete</button></td>
             </tr>
-
+            <tr>
+                <td>Landscaping</td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Edit</button></td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#delete">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Graphic Designer</td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Edit</button></td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#delete">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Electrician</td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#exampleModalCenter">Edit</button></td>
+                <td><button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#delete">Delete</button></td>
+            </tr>
         </table>
 
     </div>
     <div style="padding-bottom:9rem">
         <div style="float:right;">
-            <button class="btn btn-primary btn-sm " onclick="location.href='@Url.Action("AdminCatergories", "AdminController")'">Edit Categories</button>
+            <button class="btn btn-primary btn-sm " onclick="location.href='@Url.Action("UserProfile", "FreeLancer")'">Edit Categories</button>
 
             <div style="padding-top:1rem">
                 <button class="btn btn-primary btn-sm ">Print Report</button>
