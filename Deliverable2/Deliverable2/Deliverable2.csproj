@@ -189,6 +189,7 @@
     <Content Include="Views\Employer\PotentialFreelancer.cshtml" />
     <Content Include="Views\Employer\Profiles.cshtml" />
     <Content Include="Views\Employer\PastBookings.cshtml" />
+    <Content Include="Views\Admin\AdminCatergories.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
