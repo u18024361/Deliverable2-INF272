@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Profiles";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<body>
+    <div class="info">
+        <i class="fa fa-user" style="font-size:148px; color: #666666; left:20px"></i>
+        <div>
+            <h1 style="display:inline">Yashil Rathod <!--Model.Name--></h1><br />
+            <h4 style="display:inline">Plumber <!--Model.Job--></h4><br />
+            <h4 style="display:inline">Laudium, Gauteng <!--Model.Venue--></h4>
+        </div>
+    </div>
+    <div class="c">
+        <img style="width:auto" height="250" src="~/Pictures/Logo.jpeg" alt="Logo" />
+    </div>
+
+
+
+    <div class="center" id="x">
+        <h4 style="text-align:left">Here's examples of my work:</h4>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img id="img" src="~/Pictures/Employer/1.jpeg" alt="work done" style="width:80%">
+            </div>
+
+            <div class="mySlides fade">
+                <img id="img" src="~/Pictures/Employer/2.jpg" alt="work done" style="width:60%">
+            </div>
+
+            <div class="mySlides fade">
+                <img id="img" src="~/Pictures/Employer/3.jpg" alt="work done" style="width:100%">
+            </div>
+
+        </div>
+        <br />
+        <br />
+
+        <div style="text-align:center; display:block">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    <div id="right">
+        <i class='fas fa-exclamation-triangle' style='font-size:36px'></i>
+    </div>
+    <div id="bottoma">
+        <a class="btn btn-primary" href="@Url.Action("PotentialFreelancer", "Employer")">Back</a>
+        <a class="btn btn-primary">Book for work</a>
+    </div>
+</body>
+
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000);
+    }
+</script>
+
+
