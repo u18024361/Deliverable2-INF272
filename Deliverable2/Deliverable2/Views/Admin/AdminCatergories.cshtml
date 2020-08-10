@@ -6,7 +6,7 @@
                 <h3> Admin</h3>
 
             </div>
-            <i class="glyphicon glyphicon-user" style="font-size:100px; margin-top:3rem;"></i>
+            <i class="glyphicon glyphicon-user" style="font-size:100px; margin-top:3rem;" onclick="location.href='@Url.Action("AdminHome", "Admin")' "></i>
         </div>
 
 
@@ -17,22 +17,14 @@
 
         <div class="col-md-5">
             <div>
-                <img style="width:45%; height:45%;float:right;" src="~/Pictures/logo_transparent.png" />
-
-            </div>
-        </div>
-        <div class="col-md-5">
-            <h4 style="color:purple;"> Current Business Catergories </h4>
-        </div>
-        <div class="input-group col-md-5" style="float:right">
-            <input type="text" class="form-control" placeholder="Search for an account">
-            <div class="input-group-append">
-                <button class="btn btn-secondary" type="button">
-                    <span class="glyphicon glyphicon-search"></span>
-                </button>
+                <img style="width:45%; height:45%; float:right;" src="~/Pictures/logo_transparent.png" />
             </div>
         </div>
     </div>
+    <div class="col-md-5">
+        <h4 style="color:purple;"> Current Business Catergories </h4>
+    </div>
+  
 
     <div class="container" style="padding-bottom:2rem">
         <table id="table" class="table  table-hover table-responsive"
@@ -79,7 +71,7 @@
     </div>
     <div style="padding-bottom:9rem">
         <div style="float:right;">
-            <button class="btn btn-primary btn-sm " onclick="location.href='@Url.Action("UserProfile", "FreeLancer")'">Edit Categories</button>
+            <button class="btn btn-primary btn-sm " data-toggle="modal" data-target="#New ">Add New</button>
 
             <div style="padding-top:1rem">
                 <button class="btn btn-primary btn-sm ">Print Report</button>
@@ -92,27 +84,24 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Disable Account</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Edit Category</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body center-block text-center text-info">
+            <div class="modal-body ">
                 <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="inputGroupSelect01">Reason for disabling</label>
-                    </div>
-                    <select class="custom-select" id="inputGroupSelect01" required>
-                        <option selected required>Choose...</option>
-                        <option value="1">Violent Content</option>
-                        <option value="2">Harmful Acts</option>
-                        <option value="3">Spam</option>
-                        <option value="4">Offensive Pictures</option>
-                    </select>
+                    <label for="catname"><b>Category:</b></label>
+                    <input type="text" name="catname" value="plumber">
+                    <br>
+                    <label for="#Photo">Upload photos of your work</label>  <span style="float:right;"><i class="glyphicon glyphicon-folder-open"></i></span>
+                           <div>
+                            <img style="width:40%; height:40%; float:right;" src="~/Pictures/plumber1.jpg" />
+                           </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Confirm</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Save</button>
             </div>
         </div>
     </div>
@@ -128,7 +117,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                Confirm deleting of the account
+                Confirm deleting of this catergory 
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -137,3 +126,30 @@
         </div>
     </div>
 </div>
+
+
+<div class="modal fade" id="New" tabindex="-1" role="dialog" aria-labelledby="NewCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Add New Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <div class="input-group mb-3">
+                    <label for="catname"><b>Category:</b></label>
+                    <input type="text" name="catname" value="new category">
+                    <br>
+                    <label for="#Photo">Picture:</label>  <span style="float:right;"><i class="glyphicon glyphicon-folder-open"></i></span>
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+
