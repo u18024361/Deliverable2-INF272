@@ -13,5 +13,10 @@ namespace Deliverable2.Controllers
         {
             return View();
         }
+
+        public ActionResult AdminCatergories()
+        {
+            return View();
+        }
     }
 }
