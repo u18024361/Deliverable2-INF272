@@ -9,7 +9,12 @@ namespace Deliverable2.Controllers
     public class LoginController : Controller
     {
         // GET: Login
-        public ActionResult Index()
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        public ActionResult Password()
         {
             return View();
         }
