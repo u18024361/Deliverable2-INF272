@@ -1,41 +1,84 @@
-﻿@*@{
-        ViewBag.Title = "Index";
-    }
+﻿
+    <div class="container">
+        <div class="row" style="padding-bottom:50px">
 
-        <link href="~/Content/Project.css" rel="stylesheet" />*@
-@*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*@
+            <div class="col-md-5">
+                <div>
+                    <img style="width:70%; height:70%; margin-right:58%; margin-top:3rem" src="~/Pictures/Logo2.jpeg" />
+                </div>
+            </div>
+
+            <div class="text-center col-md-2" style="margin-top:2rem">
 
 
-<div class="row" style="padding-bottom:50px">
 
-    <div class="col-md-5">
-        <div>
-            <img style="width:70%; height:70%; margin-right:58%; " src="~/Pictures/Logo2.jpeg" />
+            </div>
+
+            <div class="col-md-5">
+                <span style="margin-left:96%;font-size:20px;" class="glyphicon glyphicon-lock"></span>
+                <i class="glyphicon glyphicon-user" style="font-size:100px; margin-bottom:1rem;"></i>
+                <div style="float:left;margin-top:4rem;margin-left:20rem; margin-right:2rem;">
+                    <h4> Welcome</h4>
+                    <h5>Vrajesh Patel</h5>
+                </div>
+            </div>
+
         </div>
-    </div>
 
-    <div class="text-center col-md-2" style="margin-top:2rem">
+        <div class="center" id="xx" style="width:100%; text-align:center" ;>
+            <h4 style="color:purple">Select a category of work you are looking for:</h4><br /><br />
+        </div>
+
+        <div class="row"style="padding-top:2rem">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px;background-image: url(/Pictures/plumber.png); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white ">Plumber</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="text-center">
+                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px ;background-image: url(/Pictures/land.jpg); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white" >Landscaping</button>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="text-center">
+                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px;background-image: url(/Pictures/photo2.jpg); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white ">Photographer</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row"style="padding-top:6rem">
+            <div class="col-md-4">
+                <div class="text-center">
+                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px;background-image: url(/Pictures/elec.jpg); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white " >Electrician</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="text-center">
+                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px;background-image: url(/Pictures/paint.jpg); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white" >Painting</button>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4" >
+                <div class="text-center" >
+                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px;background-image: url(/Pictures/graphic.jpg); background-size:cover;color:white  ">Graphic Designer</button>
+                </div>
+
+            </div>
+        </div>
 
        
 
+
     </div>
 
-    <div class="col-md-5">
-        <span style="margin-left:96%;font-size:20px" class="glyphicon glyphicon-lock"></span>
-        <i class="glyphicon glyphicon-user" style="font-size:100px; margin-top:1rem;"></i>
-        <div style="float:left;margin-top:4rem;margin-left:20rem; margin-right:2rem;">
-            <h4> Welcome,</h4>
-            <h5>Vrajesh Patel</h5>
-        </div>
-    </div>
-
-</div>
-
-<div class="center" id="xx" style="width:100%; text-align:center";>
-    <h4 style="color:purple">Select a category of work you are looking for:</h4><br /><br />
-</div>
-
-<div class="container">
+@*<div class="container">
     <div class="row" >     
             <div class="col-md-6">
                 <div class="column btn-block">
@@ -48,20 +91,8 @@
      </div>
 
 
-    @*<div class="row">
-                <div class="column">
-                    <a class="btn btn-primary btn-block" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Landscaping</a><br /><br /><br />
-                    <a class="btn btn-primary btn-block" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Painting</a><br /><br /><br />
-                </div>
-
-                <div class="column">
-                    <a class="btn btn-primary btn-block" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Photographer</a><br /><br /><br />
-                    <a class="btn btn-primary btn-block" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Graphic Designer</a><br /><br /><br />
-                </div>
-
-            </div>
-    </div>*@
+  
 
      </div>
-</div>
+</div>*@
 
