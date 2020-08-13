@@ -1,82 +1,92 @@
 ﻿
-@{
-    ViewBag.Title = "Profiles";
-}
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<link href="~/Content/Project.css" rel="stylesheet" />
-<body>
-    <div class="info">
-        <i class="fa fa-user" style="font-size:148px; color: #666666; left:20px"></i>
-        <div>
-            <h1 style="display:inline">Yashil Rathod <!--Model.Name--></h1><br />
-            <h4 style="display:inline">Plumber <!--Model.Job--></h4><br />
-            <h4 style="display:inline">Laudium, Gauteng <!--Model.Venue--></h4>
-        </div>
-    </div>
-    <div class="c">
-        <img style="width:auto" height="250" src="~/Pictures/Logo.jpeg" alt="Logo" />
-    </div>
+<style>
 
 
-
-    <div class="center" id="x">
-        <h4 style="text-align:left">Here's examples of my work:</h4>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img id="img" src="~/Pictures/Employer/1.jpeg" alt="work done" style="width:80%">
-            </div>
-
-            <div class="mySlides fade">
-                <img id="img" src="~/Pictures/Employer/2.jpg" alt="work done" style="width:60%">
-            </div>
-
-            <div class="mySlides fade">
-                <img id="img" src="~/Pictures/Employer/3.jpg" alt="work done" style="width:100%">
-            </div>
-
-        </div>
-        <br />
-        <br />
-
-        <div style="text-align:center; display:block">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </div>
-
-    <div id="right">
-        <i class='fas fa-exclamation-triangle' style='font-size:36px'></i>
-    </div>
-    <div id="bottoma">
-        <a class="btn btn-primary" href="@Url.Action("PotentialFreelancer", "Employer")">Back</a>
-        <a class="btn btn-primary">Book for work</a>
-    </div>
-</body>
-
-
-<script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        setTimeout(showSlides, 4000);
+    img {
+        margin: 5px;
     }
-</script>
+</style>
 
+<span style="margin-left:96%;font-size:20px" class="glyphicon glyphicon-lock"></span>
+
+<div class="row" style="padding-bottom:50px">
+    <div class="col-md-5">
+        <div style="float:right;margin-top:4rem;margin-right:20rem;">
+            <h4> Yahil Rathod</h4>
+            <h5>Plumber</h5>
+            <h5>Laudium, Gauteng</h5>
+        </div>
+        <i class="glyphicon glyphicon-user" style="font-size:100px; margin-top:2rem;"></i>
+    </div>
+
+
+    <div class="text-center col-md-2" style="margin-top:2rem">
+
+        <h1>Welcome <br /> <span style="font-size:21px"> this is your profile</span></h1>
+
+    </div>
+
+    <div class="col-md-5">
+        <div>
+            <img style="width:50%; height:50%;margin-left:58%; " src="~/Pictures/Logo.jpeg" />
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-6">
+        <p style="width:40rem;">
+            Hi My name is Yahil Rathod and i am an experienced plumber.
+            I trained at the technical college in Pretoria namely: Tuks Plumbing college.
+            I was Top of my class and was able to fix any blocked toilet or dripping pipe.
+            I have always prided myself with my exceptional quality contorl and affordability.
+            I am available 24/7 for any emergancy and willing to travel vast distances in order to fulfiil
+            my duties and oath I undertook at college. I spezialize in pipes and water systems and my favorite jobs
+            include clearing out blocked drains and fixing leaks. Make sure to make a booking in advance as i am booked out.
+            Call the best flush the rest.
+        </p>
+    </div>
+    <div class="col-md-6">
+
+        <div class="d-flex flex-row">
+            <div class="col-md-4">
+                <img style="width:150px;height:100px;" class="img-fluid" src="~/Pictures/plumber1.jpg" />
+
+            </div>
+            <div class="col-md-4">
+                <img style="width:150px;height:100px;" class="img-fluid" src="~/Pictures/plumber2.jpg" />
+
+            </div>
+
+            <div class="col-md-4">
+                <img style="width:150px;height:100px;" class="img-fluid" src="~/Pictures/plumber3.jpg" />
+
+            </div>
+
+        </div>
+        <div class="d-flex flex-row">
+            <div class="col-md-4">
+                <img style="width:150px;height:100px;" class="img-fluid" src="~/Pictures/plumber4.jpg" />
+
+            </div>
+            <div class="col-md-4">
+                <img style="width:150px;height:100px;" class="img-fluid" src="~/Pictures/plumber5.jpg" />
+
+            </div>
+            <div class="col-md-4">
+                <img style="width:150px;height:100px;" class="img-fluid" src="~/Pictures/plumber6.jpg" />
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div style="padding-bottom:4%;margin-left:92rem;margin-top:4rem;">
+    <button style="width:110px" class="btn btn-primary " >Book For Work</button>
+    <button class="btn btn-primary" style="width:100px" onclick="window.location.href='@Url.Action("PotentialFreelancer", "Employer")'">Back</button>
+</div>
 
