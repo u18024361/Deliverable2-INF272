@@ -1,44 +1,67 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
+﻿@*@{
+        ViewBag.Title = "Index";
+    }
 
-    <link href="~/Content/Project.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div class="b">
-    <i class="fa fa-lock" style="font-size:36px; color:#666666"></i>
-    <p style="display:inline-block; font:bold; width:40%">Welcome, Vrajesh Patel <!--Model.Name--></p>
-    <a href="@Url.Action("PastBookings", "Employer")" class="fa fa-user" style="font-size:68px;"></a>
-</div>
-
-<div class="a">
-    <img style="width:auto" height="250" src="~/Pictures/Logo.jpeg" alt="Logo" />
-</div>
+        <link href="~/Content/Project.css" rel="stylesheet" />*@
+@*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*@
 
 
-<fieldset>
-    <form>
-        <div class="center" id="xx" style="width:100%">
-            <h3>Select a category of work you are looking for:</h3><br /><br />
-            <div class="container">
-                <div class="row">
-                    <div class="column">
-                        <a class="btn btn-primary" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%" ;>Plumber</a><br /><br /><br />
-                        <a class="btn btn-primary" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Electrician</a><br /><br /><br />
-                    </div>
-                    <div class="column">
-                        <a class="btn btn-primary" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Landscaping</a><br /><br /><br />
-                        <a class="btn btn-primary" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Painting</a><br /><br /><br />
-                    </div>
-                    <div class="column">
-                        <a class="btn btn-primary" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Photographer</a><br /><br /><br />
-                        <a class="btn btn-primary" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Graphic Designer</a><br /><br /><br />
-                    </div>
+<div class="row" style="padding-bottom:50px">
 
-                </div>
-            </div>
+    <div class="col-md-5">
+        <div>
+            <img style="width:70%; height:70%; margin-right:58%; " src="~/Pictures/Logo2.jpeg" />
         </div>
-    </form>
-</fieldset>
+    </div>
+
+    <div class="text-center col-md-2" style="margin-top:2rem">
+
+       
+
+    </div>
+
+    <div class="col-md-5">
+        <span style="margin-left:96%;font-size:20px" class="glyphicon glyphicon-lock"></span>
+        <i class="glyphicon glyphicon-user" style="font-size:100px; margin-top:1rem;"></i>
+        <div style="float:left;margin-top:4rem;margin-left:20rem; margin-right:2rem;">
+            <h4> Welcome,</h4>
+            <h5>Vrajesh Patel</h5>
+        </div>
+    </div>
+
+</div>
+
+<div class="center" id="xx" style="width:100%; text-align:center";>
+    <h4 style="color:purple">Select a category of work you are looking for:</h4><br /><br />
+</div>
+
+<div class="container">
+    <div class="row" >     
+            <div class="col-md-6">
+                <div class="column btn-block">
+                    <a class="btn btn-primary btn-block" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%" ;>Plumber</a><br /><br /><br />
+                </div>
+                <div class="col-md-6" >
+                    <a class="btn btn-primary btn-block" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Electrician</a><br /><br /><br />
+                </div>
+             
+     </div>
+
+
+    @*<div class="row">
+                <div class="column">
+                    <a class="btn btn-primary btn-block" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Landscaping</a><br /><br /><br />
+                    <a class="btn btn-primary btn-block" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Painting</a><br /><br /><br />
+                </div>
+
+                <div class="column">
+                    <a class="btn btn-primary btn-block" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Photographer</a><br /><br /><br />
+                    <a class="btn btn-primary btn-block" href="@Url.Action("PotentialFreelancer", "Employer")" style="width:73%; height:48%">Graphic Designer</a><br /><br /><br />
+                </div>
+
+            </div>
+    </div>*@
+
+     </div>
+</div>
 

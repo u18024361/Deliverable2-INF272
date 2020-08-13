@@ -1,60 +1,55 @@
-﻿
-@{
-    ViewBag.Title = "PotentialFreelancer";
-}
+﻿@*@{
+        ViewBag.Title = "PotentialFreelancer";
+    }*@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="~/Content/Project.css" rel="stylesheet" />
-<body>
-    <fieldset>
-        <div class="a">
-            <img style="width:auto" height="280" src="~/Pictures/Logo.jpeg" alt="Logo" />
-        </div>
-        <div class="centr" style="width:100%">
-            <h3 style="text-shadow:1px 1px 1px #b300b3">Take your pick! Here are South Africa's </h3>
-            <h3 style="text-shadow:1px 1px 1px #b300b3">plumbers <!--Model.Job-->:</h3>
-            <a class="btn btn-primary" id="bottom" href="@Url.Action("Index", "Employer")">Go Back</a>
-        </div>
+@*<link href="~/Content/Project.css" rel="stylesheet" />*@
+
+<div class="text-center">
+    <img style="width:60%; height:60%" src="~/Pictures/Logo2.jpeg"  />
+</div>
+<div class="center" style="width:100%; text-align:center;">
+    <h3 style="color:purple">Take your pick! Here are South Africa's </h3>
+    <h3 style="color:purple">plumbers <!--Model.Job-->:</h3>
+
+</div>
 
 
-        <!--foreach (var Freelancer in Model.Users) -->
-        <table class="user" id="list" style="border-color:transparent">
-            <tr>
-                <td><i class="fa fa-user" style="font-size:68px"></i></td>
-                <td>Rob <!--Model.FullName--></td>
-                <td>Melrose, Gauteng <!--Model.Venue--></td>
-                <td><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span></td>
-                <td><a class="btn btn-primary" id="btnViewProfile" href="@Url.Action("Profiles", "Employer")"<!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->View Profile</a></td>
-            </tr>
+<!--foreach (var Freelancer in Model.Users) -->
+<table class="table  table-hover table-responsive"
+       style="margin-left: auto; margin-right: auto;">
+    <tr>
+        <td><i class="fa fa-user" style="font-size:68px"></i></td>
+        <td>Rob <!--Model.FullName--></td>
+        <td>Melrose, Gauteng <!--Model.Venue--></td>
+        <td><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span></td>
+        <td><a class="btn btn-primary" id="btnViewProfile" href="@Url.Action("Profiles", "Employer")"<!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->View Profile</a></td>
+    </tr>
 
-            <tr>
-                <td><i class="fa fa-user" style="font-size:68px"></i></td>
-                <td>jnjkj  kbbkjb.jn <!--Model.FullName--></td>
-                <td>Melrose, Gauteng <!--Model.Venue--></td>
-                <td><span style='font-size:40px; color:#999999'>&#9733;</span></td>
-                <td><a class="btn btn-primary" id="btnViewProfile" href="@Url.Action("Profiles", "Employer")"<!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->View Profile</a></td>
-            </tr>
+    <tr>
+        <td><i class="fa fa-user" style="font-size:68px"></i></td>
+        <td>jnjkj  kbbkjb.jn <!--Model.FullName--></td>
+        <td>Melrose, Gauteng <!--Model.Venue--></td>
+        <td><span style='font-size:40px; color:#999999'>&#9733;</span></td>
+        <td><a class="btn btn-primary" id="btnViewProfile" href="@Url.Action("Profiles", "Employer")"<!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->View Profile</a></td>
+    </tr>
 
-            <tr>
-                <td><i class="fa fa-user" style="font-size:68px"></i></td>
-                <td>kbbjknjlgcf <!--Model.FullName--></td>
-                <td>Melrose, Gauteng <!--Model.Venue--></td>
-                <td><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span></td>
-                <td><a class="btn btn-primary" id="btnViewProfile" href="@Url.Action("Profiles", "Employer")"<!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->View Profile</a></td>
-            </tr>
-            <tr>
-                <td><i class="fa fa-user" style="font-size:68px"></i></td>
-                <td>Rob <!--Model.FullName--></td>
-                <td>Melrose, Gauteng <!--Model.Venue--></td>
-                <td><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span></td>
-                <td><a class="btn btn-primary" id="btnViewProfile" href="@Url.Action("Profiles", "Employer")"<!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->View Profile</a></td>
-            </tr>
+    <tr>
+        <td><i class="fa fa-user" style="font-size:68px"></i></td>
+        <td>kbbjknjlgcf <!--Model.FullName--></td>
+        <td>Melrose, Gauteng <!--Model.Venue--></td>
+        <td><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span></td>
+        <td><a class="btn btn-primary" id="btnViewProfile" href="@Url.Action("Profiles", "Employer")"<!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->View Profile</a></td>
+    </tr>
+    <tr>
+        <td><i class="fa fa-user" style="font-size:68px"></i></td>
+        <td>Rob <!--Model.FullName--></td>
+        <td>Melrose, Gauteng <!--Model.Venue--></td>
+        <td><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span><span style='font-size:40px; color:#999999'>&#9733;</span></td>
+        <td><a class="btn btn-primary" id="btnViewProfile" href="@Url.Action("Profiles", "Employer")"<!--href="Url.Action("ViewProfile", new {ID = profile.ID})" value="View" class="viewButton"-->View Profile</a></td>
+    </tr>
 
+</table>
 
-
-
-        </table>
-    </fieldset>
-</body>
-
+<a class="btn btn-primary" id="bottom" style="float:right;"href="@Url.Action("Index", "Employer")">Go Back</a>
 

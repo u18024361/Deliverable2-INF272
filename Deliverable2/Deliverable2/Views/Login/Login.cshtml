@@ -25,11 +25,11 @@
 </div>
 <div class="text-center">
     <h4>Don't have an account?</h4>
-    <h4>Register below</h4>
+    <h4 >Register below</h4>
 </div>
 <div class="text-center" style="padding-top:3rem">
-    <button style="width:200px;margin:1rem" class="btn btn-primary">Freelancer</button>
-    <button style="width:200px;margin:1rem" class="btn btn-primary">Employer</button>
+    <button style="width:200px;margin:1rem" class="btn btn-primary" onclick="location.href='@Url.Action("FLUserReg", "UserRegistration")'">Freelancer</button>
+    <button style="width:200px;margin:1rem" class="btn btn-primary" onclick="location.href='@Url.Action("UserRegistration", "UserRegistration")'">Employer</button>
 
 </div>
 
@@ -61,7 +61,7 @@
                     </div>
                     <br />
                     <div>
-                        <a href="url">Forgot Password</a>
+                        <a onclick="location.href='@Url.Action("Password", "Login")'">Forgot Password</a>
                     </div>
                 </div>
 
