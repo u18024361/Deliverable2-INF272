@@ -13,6 +13,12 @@ namespace Deliverable2.Controllers
         {
             return View();
         }
+
+        public ActionResult FLUserReg()
+        {
+            return View();
+        }
+
         public ActionResult FreelancerRegistration()
         {
             return View();
