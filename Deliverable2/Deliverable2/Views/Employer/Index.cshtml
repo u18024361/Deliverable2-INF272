@@ -1,5 +1,26 @@
 ﻿
     <div class="container">
+        <span style="margin-left:96%; margin-top:2rem; font-size:20px" class="glyphicon glyphicon-lock" data-toggle="modal" data-target="#logout"></span>
+
+        <div class="modal fade" id="logout" tabindex="-1" role="dialog" aria-labelledby="logoutCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteLongTitle">Delete Account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Would you like to logout?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary" onclick="location.href='@Url.Action("Login", "Login")'">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row" style="padding-bottom:50px">
 
             <div class="col-md-5">
@@ -15,7 +36,7 @@
             </div>
 
             <div class="col-md-5">
-                <span style="margin-left:96%;font-size:20px;" class="glyphicon glyphicon-lock"></span>
+                
                 <i class="glyphicon glyphicon-user" style="font-size:100px; margin-bottom:1rem;"></i>
                 <div style="float:left;margin-top:4rem;margin-left:20rem; margin-right:2rem;">
                     <h4> Welcome</h4>
@@ -29,7 +50,7 @@
             <h4 style="color:purple">Select a category of work you are looking for:</h4><br /><br />
         </div>
 
-        <div class="row"style="padding-top:2rem">
+        <div class="row" style="padding-top:2rem">
             <div class="col-md-4">
                 <div class="text-center">
                     <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px;background-image: url(/Pictures/plumber.png); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white ">Plumber</button>
@@ -38,7 +59,7 @@
 
             <div class="col-md-4">
                 <div class="text-center">
-                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px ;background-image: url(/Pictures/land.jpg); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white" >Landscaping</button>
+                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px ;background-image: url(/Pictures/land.jpg); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white">Landscaping</button>
                 </div>
 
             </div>
@@ -51,32 +72,33 @@
             </div>
         </div>
 
-        <div class="row"style="padding-top:6rem">
+        <div class="row" style="padding-top:6rem">
             <div class="col-md-4">
                 <div class="text-center">
-                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px;background-image: url(/Pictures/elec.jpg); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white " >Electrician</button>
+                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px;background-image: url(/Pictures/elec.jpg); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white ">Electrician</button>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="text-center">
-                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px;background-image: url(/Pictures/paint.jpg); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white" >Painting</button>
+                    <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px;background-image: url(/Pictures/paint.jpg); background-repeat:no-repeat; background-size:50%; background-size:cover;color:white">Painting</button>
                 </div>
 
             </div>
 
-            <div class="col-lg-4" >
-                <div class="text-center" >
+            <div class="col-lg-4">
+                <div class="text-center">
                     <button class="btn btn-lg" onclick="location.href='@Url.Action("PotentialFreelancer", "Employer")'" style="width:180px;height:120px;background-image: url(/Pictures/graphic.jpg); background-size:cover;color:white  ">Graphic Designer</button>
                 </div>
 
             </div>
         </div>
 
+
+
        
-
-
     </div>
+    <button class="btn btn-warning" style="float:right; margin-top:20px; margin-right:10px; background-color:purple;" onclick="location.href='@Url.Action("PastBookings", "Employer")'">Previous Bookings</button>
 
 @*<div class="container">
     <div class="row" >     

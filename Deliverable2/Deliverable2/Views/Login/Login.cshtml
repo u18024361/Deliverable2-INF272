@@ -47,17 +47,18 @@
             <div class="modal-body">
                 <div class="form-group form-inline" style="margin-left:8rem">
                     <label>Email Address:</label>
-                    <input type="text" class="form-control" style="margin-left:1rem" />
+                    <input type="text" class="form-control" id="#example" style="margin-left:1rem" />
                 </div>
                 <br />
                 <div class="form-group form-inline" style="margin-left:8rem">
                     <label>Password:</label>
-                    <input type="password" class="form-control" style="margin-left:4rem" />
+                    <input type="password" class="form-control"  style="margin-left:4rem" />
                 </div>
                 <br />
                 <div class="text-center">
                     <div>
-                        <button class="btn btn-primary">Sign In</button>
+                        <button class="btn btn-primary"  id="signin" value="Submit" onclick="click()">Sign In</button>
+
                     </div>
                     <br />
                     <div>
@@ -72,6 +73,29 @@
     </div>
 </div>
 
+<script>
+    function click()
+    {
+        if (document.getElementById("signin").value == "employer@example.co.za")
+        {
+            '@Url.Action("Index", "Employer")';
+        }
+        else if (document.getElementById("signin").value == "freelancer@example.co.za")
+        {
+            '@Url.Action("User_Profile", "Freelancer")';
+        }
+
+        else if (document.getElementById("signin").value == "admin@example.co.za")
+        {
+
+            '@Url.Action("AdminHome", "Admin")';
+
+        }
+
+        
+    }
+
+</script>
 
 
 
